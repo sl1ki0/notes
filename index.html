@@ -17,12 +17,12 @@
     <div class="container">
       <div class="row g-3 mb-5 justify-content-center">
         <div class="col-md-12">
-          <h1 class="my-heading my-5 text-center">Заметки</h1>
+          <h1 class="my-heading my-5 text-center">Notes</h1>
         </div>
         <div class="col-md-4">
           <div class="form-floating">
             <input type="text" class="form-control" id="title" />
-            <label for="title">Название</label>
+            <label for="title">Name</label>
           </div>
           <div class="my-3">
             <textarea class="form-control" rows="5" id="text"></textarea>
@@ -31,15 +31,19 @@
         <div class="col-md-4">
           <div class="form-floating">
             <input type="datetime-local" class="form-control" id="date" />
-            <label for="date">Дата</label>
+            <label for="date">Date</label>
           </div>
-          <div class="form-floating my-3">
-            <input type="text" class="form-control" id="category" />
-            <label for="category">Категория</label>
-          </div>
+          <form class="mt-4">
+            <label class="form-label" for="classer">Choose category</label>
+            <select class="form-select" id="classer" aria-label="Default select example">
+              <option value="1">Important</option>
+              <option value="2">Daily</option>
+              <option value="3">Study</option>
+            </select>
+          </form>
           <div class="btn-group d-flex justify-content-center my-3">
             <button id="save" type="button" class="btn btn-outline-secondary">
-              Сохранить
+              save
             </button>
           </div>
         </div>
